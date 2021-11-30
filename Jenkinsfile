@@ -1,13 +1,13 @@
 pipeline {
   environment {
-    registry = "gustavoapolinario/docker-test"
+    registry = "arundhwaj/sbp-poc"
     registryCredential = ‘dockerhub’
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git ''
+        git 'https://github.com/sbp-dev-poc/sbp-poc.git'
       }
     }
     stage('Building image') {
