@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "arundhwaj/sbp-poc"
-    registryCredential = ‘dockerhub’
+    registryCredential = 'dockerhub'
   }
   agent any
   stages {
